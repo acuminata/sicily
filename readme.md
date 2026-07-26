@@ -82,4 +82,4 @@ nomad job status
 
 4. Import the CA certificate (`nomad.${DOMAIN}-agent.ca.pem`) into your browser or OS trust store as a **Trusted Root Certification Authority**.
 
-5. Navigate to https://${DOMAIN} in your browser. A prompt to select the imported certificate will appear if the certificates from step 2 were installed in the OS trust store.
+5. Navigate to `https://${DOMAIN}` in your browser. A prompt to select the imported certificate will appear if the certificates from step 2 were installed in the OS trust store.
