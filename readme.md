@@ -1,6 +1,6 @@
 # HashiCorp NOMAD mTLS Set Up
 
-This guide covers setting up a HashiCorp Nomad cluster secured with mutual TLS (mTLS) (manually managed certificates)
+This guide covers setting up a HashiCorp Nomad cluster secured with mutual TLS where certificates are manually managed (use Hashicorp Vault to easily automate the process)
 
 ---
 
