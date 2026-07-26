@@ -1,11 +1,11 @@
 # HashiCorp NOMAD mTLS Set Up
 
-This guide covers setting up a HashiCorp Nomad cluster secured with mutual TLS (mTLS)
+This guide covers setting up a HashiCorp Nomad cluster secured with mutual TLS (mTLS) (manually managed certificates)
 
 ---
 
 ### Step 1. Allow RPC Port on Server VPS Firewall
-- Allow RPC port (default 4647) in the VPS/firewall that is running the Nomad server agent.
+- Allow RPC port (default 4647) in the VPS/firewall that will run the Nomad server agent.
 ```shell
  ### if using ufw
  sudo ufw allow 4647
