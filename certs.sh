@@ -40,6 +40,5 @@ cp "${DOMAIN}-agent-ca.pem" "${CLIENT_DIR}"
 
 mv "${DOMAIN}-browser.pfx" "${BROWSER_DIR}"
 
-rm "${DOMAIN}-agent-ca.pem"
 
 echo "Certificates successfully organized under ${CERTS_BASE_DIR}/"
