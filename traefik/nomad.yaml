@@ -1,0 +1,15 @@
+tcp:
+  routers:
+    nomad-http:
+      rule: "HostSNI(`{DOMAIN}`)"
+      entryPoints:
+        - websecure # Entrypoint exposing port 443
+      service: nomad-http
+      tls:
+        passthrough: true
+
+  services:
+    nomad-http:
+      loadBalancer:
+        servers:
+          - address: "127.0.0.1:4646" #127.0.0.1 matches the server
