@@ -41,9 +41,9 @@ This guide covers setting up a HashiCorp Nomad cluster secured with mutual TLS (
 
 ```shell
 export NOMAD_ADDR="https://${DOMAIN}"
-export NOMAD_CACERT="$(pwd)/${DOMAIN}-agent-ca.pem"
-export NOMAD_CLIENT_CERT="$(pwd)/${REGION}-client-${DOMAIN}.pem"
-export NOMAD_CLIENT_KEY="$(pwd)/${REGION}-client-${DOMAIN}-key.pem"
+export NOMAD_CACERT="$(pwd)/certs/${DOMAIN}-agent-ca.pem"
+export NOMAD_CLIENT_CERT="$(pwd)/certs/client/${REGION}-client-${DOMAIN}.pem"
+export NOMAD_CLIENT_KEY="$(pwd)/certs/client/${REGION}-client-${DOMAIN}-key.pem"
 ```
 
 - Test the connection
